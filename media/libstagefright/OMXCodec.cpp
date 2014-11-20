@@ -674,6 +674,7 @@ status_t OMXCodec::configureCodec(const sp<MetaData> &meta) {
             ExtendedCodec::getRawCodecSpecificData(meta, data, size);
             if (size) {
                 addCodecSpecificData(data, size);
+            }
            #endif
         }
     }
